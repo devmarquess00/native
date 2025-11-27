@@ -3,12 +3,13 @@ import { Header } from "@/src/components/header";
 import { Navigation } from "@/src/components/navigation";
 import { Transactions } from "@/src/components/transactions";
 
-import { StyleSheet, View } from "react-native";
+import { StatusBar, StyleSheet, View } from "react-native";
 
 export default function Home() {
   return (
     <View style={styles.containerMain}>
       <Header />
+      <StatusBar barStyle="light-content" />
 
       <View>
         <Card />
