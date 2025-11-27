@@ -39,8 +39,8 @@ export const styles = StyleSheet.create({
   },
 
   containerExitText: {
-    borderLeftWidth: 1,
-    borderLeftColor: "#dfdfdf",
+    borderLeftWidth: 0.5,
+    borderLeftColor: "#A39D9D",
     paddingLeft: 6,
   },
 
