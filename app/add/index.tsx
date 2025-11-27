@@ -1,6 +1,7 @@
 import { Buttons } from "@/src/components/add/buttons";
+import { Inputs } from "@/src/components/add/inputs";
 import { Navigation } from "@/src/components/navigation";
-import { StyleSheet, TextInput, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 export default function Add() {
   return (
@@ -8,7 +9,7 @@ export default function Add() {
       <View style={styles.containerHeader}>
         <Buttons />
 
-        <TextInput style={styles.input} placeholder="R$ 00,00" placeholderTextColor="white" />
+        <Inputs />
       </View>
 
       <Navigation />
