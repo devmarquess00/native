@@ -1,13 +1,23 @@
 import { styles } from "@/src/components/transactionsCard/styles";
+import { FC } from "react";
 import { Text, View } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-const TransactionsCard = () => {
+type Props = {
+  toggleModalDelete: () => void;
+};
+
+const TransactionsCard: FC<Props> = ({ toggleModalDelete }) => {
   return (
     <View style={styles.transactionCard}>
       <View style={styles.transactionCardContent}>
         <View style={styles.transactionCardInfos}>
-          <Icon name="car" size={20} color="#E22B1B" />
+          <Icon
+            name="car"
+            size={20}
+            color="#E22B1B"
+            onPress={toggleModalDelete}
+          />
 
           <View>
             <Text style={styles.transactionCardTextCategory}>Manutenção</Text>
@@ -22,7 +32,12 @@ const TransactionsCard = () => {
             </Text>
           </View>
 
-          <Icon name="trash" size={22} color="#E22B1B" />
+          <Icon
+            name="trash"
+            size={22}
+            color="#E22B1B"
+            onPress={toggleModalDelete}
+          />
         </View>
       </View>
     </View>

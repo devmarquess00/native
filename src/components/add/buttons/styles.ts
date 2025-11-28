@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     gap: 10,
     borderWidth: 0.5,
-    borderColor: "#A39D9D",
+    borderColor: "#E22B1B",
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 100,
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     gap: 10,
     borderWidth: 0.5,
-    borderColor: "#A39D9D",
+    borderColor: "#4BD388",
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 100,
@@ -45,9 +45,23 @@ export const styles = StyleSheet.create({
     borderWidth: 0,
   },
 
-  textInButton: {
-    color: "white",
+  textInButtonEntries: {
+    color: "#4BD388",
     fontSize: 14,
     fontWeight: 800,
+  },
+
+  textInButtonEntriesWhenClick: {
+    color: "white",
+  },
+
+  textInButtonExit: {
+    color: "#E22B1B",
+    fontSize: 14,
+    fontWeight: 800,
+  },
+
+  textInButtonExitWhenClick: {
+    color: 'white'
   },
 });

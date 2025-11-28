@@ -1,19 +1,24 @@
 import { styles } from "@/src/components/transactions/styles";
 import { TransactionsCard } from "@/src/components/transactionsCard";
-import { Text, View } from 'react-native';
+import { FC } from "react";
+import { Text, View } from "react-native";
 
-const Transactions = () => {
-    return (
-        <View>
-            <Text style={styles.titleTransactions}>Transações recentes</Text>
+type Props = {
+  toggleModalDelete: () => void;
+};
 
-            <View style={styles.containerTransactions}>
-                <TransactionsCard /> 
-                <TransactionsCard />    
-            </View>
-        </View>
-    )
-}
+const Transactions: FC<Props> = ({ toggleModalDelete }) => {
+  return (
+    <View>
+      <Text style={styles.titleTransactions}>Transações recentes</Text>
+
+      <View style={styles.containerTransactions}>
+        <TransactionsCard toggleModalDelete={toggleModalDelete} />
+        <TransactionsCard toggleModalDelete={toggleModalDelete} />
+      </View>
+    </View>
+  );
+};
 
 export { Transactions };
 

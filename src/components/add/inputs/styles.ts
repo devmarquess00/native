@@ -48,4 +48,16 @@ export const styles = StyleSheet.create({
         fontWeight: 800,
         fontSize: 14,
     },
+
+    containerCategory: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 8,
+    },
+
+    categoryText: {
+        color: "white",
+        fontSize: 16,
+        fontWeight: 700,
+    },
 })

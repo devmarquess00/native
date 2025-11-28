@@ -10,7 +10,9 @@ export const styles = StyleSheet.create({
     borderTopRightRadius: 52,
     borderTopLeftRadius: 52,
     backgroundColor: "#0D0D0D",
-    height: 320,
+    height: 'auto',
+    //height: 320,
     paddingHorizontal: 22,
+    paddingBottom: 62,
   },
 });
