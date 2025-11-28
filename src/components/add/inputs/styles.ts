@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     containerInputs: {
         flexDirection: "column",
-        marginTop: 12,
     },
 
     inputValueCash: {
@@ -16,14 +15,14 @@ export const styles = StyleSheet.create({
     containerInputsNameAndCategory: {
         flexDirection: 'column',
         gap: 12, 
-        marginTop: 30
+        marginTop: 22
     },
 
     inputName: {
-        fontSize: 16, 
+        fontSize: 16,
+        paddingVertical: 14,
         paddingHorizontal: 14,
-        paddingVertical: 18,
-        borderColor: '#A39D9D',
+        borderColor: '#242424',
         borderWidth: 0.5,
         color: "white",
         borderRadius: 6
@@ -50,14 +49,23 @@ export const styles = StyleSheet.create({
     },
 
     containerCategory: {
+        flexDirection: "column",
+    },
+
+    containerTitleCategory: {
         flexDirection: "row",
         alignItems: "center",
         gap: 8,
+        marginTop: 8,
     },
 
     categoryText: {
         color: "white",
         fontSize: 16,
         fontWeight: 700,
+    },
+
+    categoryContentList: {
+        marginVertical: 12,
     },
 })

@@ -3,6 +3,7 @@ import { onlyNumbers } from "@/src/utils";
 import { useState } from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome5";
+import { Categorys } from "../categorys";
 
 const Inputs = () => {
   const [value, setValue] = useState("");
@@ -22,14 +23,20 @@ const Inputs = () => {
 
       <View style={styles.containerInputsNameAndCategory}>
         <TextInput
-          placeholder="Nome para transação"
+          placeholder="Título da transação"
           placeholderTextColor="#A39D9D"
           style={styles.inputName}
         />
 
         <View style={styles.containerCategory}>
-          <Text style={styles.categoryText}>Categoria</Text>
-          <Icon name="tag" color="white" />
+          <View style={styles.containerTitleCategory}>
+            <Text style={styles.categoryText}>Categoria</Text>
+            <Icon name="tag" color="white" />
+          </View>
+
+          <View style={styles.categoryContentList}>
+            <Categorys />
+          </View>
         </View>
       </View>
 
