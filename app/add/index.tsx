@@ -1,13 +1,26 @@
 import { Buttons } from "@/src/components/add/buttons";
 import { Inputs } from "@/src/components/add/inputs";
 import { Navigation } from "@/src/components/navigation";
+import { useAdd } from "@/src/hooks/add/useAdd";
 import { StyleSheet, View } from "react-native";
 
 export default function Add() {
+  const {
+    buttonEntriesValue,
+    buttonExitValue,
+    toggleButtonEntriesValue,
+    toggleButtonExitValue,
+  } = useAdd();
+
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
-        <Buttons />
+        <Buttons
+          onClickButtonExit={toggleButtonExitValue}
+          onClickButtonEntries={toggleButtonEntriesValue}
+          buttonEntriesValue={buttonEntriesValue}
+          buttonExitValue={buttonExitValue}
+        />
 
         <Inputs />
       </View>

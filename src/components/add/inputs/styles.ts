@@ -30,16 +30,21 @@ export const styles = StyleSheet.create({
     },
 
     buttonTransaction: {
-        backgroundColor: "#4BD388",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#0D0D0D",
         paddingVertical: 14,
-        paddingHorizontal: 8,
+        paddingHorizontal: 22,
         borderRadius: 6,
+        height: 54,
         marginTop: 12,
     },
 
     buttonTransactionText: {
         color: "white",
         textAlign: "center",
+        alignItems: "center",
+        justifyContent: "center",
         fontWeight: 800,
         fontSize: 14,
     },

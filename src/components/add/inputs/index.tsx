@@ -1,5 +1,5 @@
 import { styles } from "@/src/components/add/inputs/styles";
-import { Pressable, Text, TextInput, View } from "react-native";
+import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
 const Inputs = () => {
   return (
@@ -24,9 +24,9 @@ const Inputs = () => {
         />
       </View>
 
-      <Pressable style={styles.buttonTransaction}>
+      <TouchableOpacity style={styles.buttonTransaction}>
         <Text style={styles.buttonTransactionText}>Cadastrar transação</Text>
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };
