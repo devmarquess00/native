@@ -6,11 +6,10 @@ import { Transactions } from "@/src/components/transactions";
 import { useHome } from "@/src/hooks/home/useHome";
 
 import {
-  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from "react-native";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
   return (
     <View style={styles.containerMain}>
       <Header />
-      <StatusBar barStyle="light-content" />
 
       <View>
         <Card />
